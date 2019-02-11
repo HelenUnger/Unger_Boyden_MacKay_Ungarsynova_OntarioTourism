@@ -1,0 +1,28 @@
+{
+  "name": "ontario-tourism",
+  "version": "1.0.0",
+  "description": "package for ontario tourism website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelenUnger/Unger_Boyden_MacKay_Ungarsynova_OntarioTourism.git"
+  },
+  "keywords": [
+    "ontario",
+    "summer",
+    "tourism"
+  ],
+  "author": "Helen Unger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HelenUnger/Unger_Boyden_MacKay_Ungarsynova_OntarioTourism/issues"
+  },
+  "homepage": "https://github.com/HelenUnger/Unger_Boyden_MacKay_Ungarsynova_OntarioTourism#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
