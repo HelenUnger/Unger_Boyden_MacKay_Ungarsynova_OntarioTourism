@@ -13,6 +13,7 @@ $db_pass = '';
 
 try{
 	$pdo = new PDO($dsn, $db_user, $db_pass);
+	// var_export($pdo);
 }catch(PDOException $exception){
 	echo 'Connection Error:'.$exception->getMessage();
 	exit();

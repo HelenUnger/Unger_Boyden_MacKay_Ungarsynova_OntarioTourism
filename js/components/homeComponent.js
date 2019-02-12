@@ -79,6 +79,10 @@ export default {
         }
     },
 
+    created: function() {
+        this.$parent.navTrue = false;
+    },
+
     methods: {
         // login() {
         //     console.log("trying to log in");
