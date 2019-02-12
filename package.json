@@ -23,6 +23,7 @@
   "homepage": "https://github.com/HelenUnger/Unger_Boyden_MacKay_Ungarsynova_OntarioTourism#readme",
   "devDependencies": {
     "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2"
   }
 }
