@@ -1,9 +1,18 @@
 header{
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 120px;
     background-color: transparent;
     color: #fff;
+    z-index: 100;
+    font-family: 'Amatic SC', cursive;
+    transition: background-color 1s linear;
+    h1{
+        position: absolute;
+        font-size: 2em;
+        left: 30%;
+        top: 5px;
+    }
 }
 
 .logo{
@@ -19,7 +28,8 @@ header{
 }
 
 .nav-links{
-    font-family: 'Californian FB', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em;
     text-transform: lowercase;
     left: 100%;
     top: 0;
@@ -27,15 +37,15 @@ header{
     z-index: 100;
     width: 50%;
     height: 100vh;
-    background-color: rgb(138, 70, 70);
+    background-color: #516d57;
     transition: all 0.5s ease-in-out;
 
     .exit{
         position: absolute;
         right: 10px;
-        top: 10px;
-        color: #000;
-        font-size: 2em;
+        top: 0;
+        color: #fff;
+        font-size: 1em;
     }
 
    .links{
@@ -45,10 +55,10 @@ header{
         li{
             display: block;
             font-size: 2em;
-            padding: 10px 0;
+            padding: 10px;
             text-align: center;
             border-bottom: 0.5px solid rgb(128, 128, 128);
-
+            text-align: center;
         }
     }
     .social{
@@ -70,6 +80,7 @@ a{
     font-size: 1.5em;
     text-decoration: none;
     color: #fff;
+    text-align: center;
     &:hover{
         color: purple;
     }
@@ -81,12 +92,19 @@ a{
 
 
 @media screen and (min-width:760px){
-    .ham-menu, .exit{
+    .ham-menu{
         font-size: 3em;
+    }
+    .exit{
+        font-size: 1em;
     }
 
     .logo{
         max-width: 12vw;
+    }
+    header h1{
+        font-size: 3em;
+        left: 35%;
     }
     
 }
@@ -99,5 +117,16 @@ a{
     .logo{
         max-width: 8vw;
     }
+
+    header h1{
+        font-size: 4em;
+        left: 40%;
+    }
     
+}
+
+
+
+.headColor{
+    background-color: #516d57f8 !important;
 }

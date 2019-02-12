@@ -14,8 +14,9 @@
 <body>
     <main id="app">
         <h1 class="hidden">Ontario Summer Tourism</h1>
-        <header>
+        <header :class="{headColor : scroll}">
             <img class="logo" src="images/WATERLOGOwhite.svg" alt="">
+            <h1>Ontario Summer</h1>
             <nav class="menu">
                 <h2 class="hidden">Main Navigation</h2>
                 <div v-on:click="toggleNav" class="ham-menu">
@@ -24,85 +25,17 @@
                 <div class="nav-links" :class="{openNav : navTrue}">
                     <div v-on:click="toggleNav" class="exit"><i class="fas fa-times"></i></div>
                     <div class="links">
-                        <router-link :to="{path: '/'}" v-on:click.prevent="toggleNav" class="link">Home</router-link>
+                        <router-link :to="{path: '/'}" v-on:click="toggleNav" class="link">Home</router-link>
                         <a href="#explore" v-on:click.prevent="toggleNav">Explore</a>
-                        <router-link :to="{path: 'register'}" v-on:click.prevent="toggleNav">Register</router-link>
+                        <router-link :to="{path: 'register'}" v-on:click="toggleNav">Register</router-link>
                     </div>
                 </div>
             </nav>
         </header>
 
         <div class="component-container">
-            <!-- <router-view></router-view> -->
-            <section class="splash-img">
-                <img src="images/bg-image.jpg" alt="shoes lookingdown at trees below">
-            </section>
-            <section id="explore">
-                <h2>Explore</h2>
-                <div class="circle-cont">
-                    <div class="explore-circle">
-                        <img src="https://picsum.photos/200/200" alt="">
-                        <p>Algonquin</p>
-                    </div>
-
-                    <div class="explore-circle">
-                        <img src="https://picsum.photos/200/200" alt="">
-                        <p>Ottawa</p>
-                    </div>
-
-                    <div class="explore-circle">
-                        <img src="https://picsum.photos/200/200" alt="">
-                        <p>Toronto</p>
-                    </div>
-
-                    <div class="explore-circle">
-                        <img src="https://picsum.photos/200/200" alt="">
-                        <p>Tobermory</p>
-                    </div>
-
-                    <div class="explore-circle">
-                        <img src="https://picsum.photos/200/200" alt="">
-                        <p>Niagara Falls</p>
-                    </div>
-
-                    <div class="explore-circle">
-                        <img src="https://picsum.photos/200/200" alt="">
-                        <p>Grand Bend</p>
-                    </div>
-
-                </div>
-            </section>
+            <router-view></router-view>
         </div>
-
-        <section class="scene">
-            <div class="clouds">
-                <img src="images/clouds.png" alt="">
-                <div class="text">
-                    <h3>Discover</h3>
-                    <p>Discover the landscapes and natural attractions that make this province so uniquely Ontario.</p>
-                </div>
-            </div>
-
-            <div class="trees">
-                <img src="images/trees.png" alt="">
-                <div class="text">
-                    <h3>Plan Ahead</h3>
-                    <p>Sign up to our newsletters for exclusive deals and events to look forward to.</p>
-                    <router-link :to="{path: 'register'}" >subscribe</router-link>
-                </div>
-            </div>
-        </section>
-
-        <section class="video">
-            <video controls>
-                <source>
-            </video>
-        </section>
-
-        <footer>
-            <img src="images/footer.png" alt="">
-            <p>&copy; 2019 Ontario Summer Tourism</p>
-        </footer>
     </main>
 
     <script type="module" src="js/main.js"></script>

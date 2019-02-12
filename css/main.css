@@ -1,9 +1,20 @@
 header {
   position: fixed;
   width: 100%;
-  height: 50px;
+  height: 120px;
   background-color: transparent;
   color: #fff;
+  z-index: 100;
+  font-family: 'Amatic SC', cursive;
+  -webkit-transition: background-color 1s linear;
+  transition: background-color 1s linear;
+}
+
+header h1 {
+  position: absolute;
+  font-size: 2em;
+  left: 30%;
+  top: 5px;
 }
 
 .logo {
@@ -19,7 +30,8 @@ header {
 }
 
 .nav-links {
-  font-family: 'Californian FB', sans-serif;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
   text-transform: lowercase;
   left: 100%;
   top: 0;
@@ -27,7 +39,7 @@ header {
   z-index: 100;
   width: 50%;
   height: 100vh;
-  background-color: #8a4646;
+  background-color: #516d57;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -35,9 +47,9 @@ header {
 .nav-links .exit {
   position: absolute;
   right: 10px;
-  top: 10px;
-  color: #000;
-  font-size: 2em;
+  top: 0;
+  color: #fff;
+  font-size: 1em;
 }
 
 .nav-links .links {
@@ -49,9 +61,10 @@ header {
 .nav-links .links li {
   display: block;
   font-size: 2em;
-  padding: 10px 0;
+  padding: 10px;
   text-align: center;
   border-bottom: 0.5px solid gray;
+  text-align: center;
 }
 
 .nav-links .social {
@@ -77,6 +90,7 @@ a {
   font-size: 1.5em;
   text-decoration: none;
   color: #fff;
+  text-align: center;
 }
 
 a:hover {
@@ -88,11 +102,18 @@ a:hover {
 }
 
 @media screen and (min-width: 760px) {
-  .ham-menu, .exit {
+  .ham-menu {
     font-size: 3em;
+  }
+  .exit {
+    font-size: 1em;
   }
   .logo {
     max-width: 12vw;
+  }
+  header h1 {
+    font-size: 3em;
+    left: 35%;
   }
 }
 
@@ -103,6 +124,14 @@ a:hover {
   .logo {
     max-width: 8vw;
   }
+  header h1 {
+    font-size: 4em;
+    left: 40%;
+  }
+}
+
+.headColor {
+  background-color: #516d57f8 !important;
 }
 
 * {
@@ -115,10 +144,15 @@ a:hover {
 body {
   scroll-behavior: smooth;
   font-family: raleway, sans-serif;
+  background-color: #fff;
 }
 
 .hidden {
   display: none;
+}
+
+.component-container {
+  z-index: 0;
 }
 
 @media screen and (min-width: 1000px) {
@@ -130,11 +164,31 @@ body {
 
 .splash-img {
   overflow: hidden;
+  position: relative;
 }
 
 .splash-img img {
   max-width: 150vw;
   margin-left: -25%;
+}
+
+.splash-img p {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 70%;
+  margin: 0 15%;
+  text-align: center;
+  color: #fff;
+  font-size: 1em;
+  border: 5px #fff solid;
+  background-color: rgba(160, 160, 160, 0.39);
+  padding: 10px 0px;
+}
+
+h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
 }
 
 #explore {
@@ -143,7 +197,7 @@ body {
 
 #explore h2 {
   display: block;
-  font-size: 3em;
+  font-size: 3.5em;
   padding: 60px 10px 20px;
 }
 
@@ -250,12 +304,46 @@ footer p {
     max-width: 100vw;
     margin-left: 0;
   }
+  .splash-img p {
+    position: absolute;
+    top: 60%;
+    width: 70%;
+    margin: 0 15%;
+    font-size: 3em;
+    padding: 10px 0px;
+  }
   #explore .circle-cont {
     width: 100%;
   }
   #explore .circle-cont .explore-circle img {
     width: 30vw;
     height: 30vw;
+  }
+  .text {
+    font-size: 2em;
+  }
+  .clouds .text {
+    margin: 30px;
+  }
+  .trees {
+    margin-top: -550px;
+  }
+  .trees .text {
+    padding: 30px;
+    margin: 0 auto;
+    right: 0;
+    width: 100%;
+  }
+  .trees .text a {
+    margin-top: 50px;
+    font-size: 1.3em;
+  }
+  video {
+    width: 80%;
+    height: 80%;
+  }
+  footer p {
+    top: 70%;
   }
 }
 
@@ -264,9 +352,91 @@ footer p {
     max-width: 100vw;
     margin-top: -15vw;
   }
+  .splash-img p {
+    position: absolute;
+    top: 60%;
+    width: 50%;
+    margin: 0 25%;
+    font-size: 3em;
+    padding: 10px 0px;
+  }
+  #explore h2 {
+    font-size: 5em;
+  }
+  #explore .circle-cont .explore-circle {
+    margin: 2vw 1vw;
+    font-size: 2em;
+  }
   #explore .circle-cont .explore-circle img {
-    width: 20vw;
-    height: 20vw;
+    width: 24vw;
+    height: 24vw;
+  }
+  #explore .circle-cont .explore-circle p {
+    font-size: 2em;
+  }
+  .text {
+    font-size: 3em;
+  }
+  .text h2 {
+    font-size: 4em;
+  }
+  .clouds .text {
+    margin: 30px;
+  }
+  .trees {
+    margin-top: -80vw;
+  }
+  .trees .text {
+    padding: 30px;
+    margin: 0 auto;
+    right: 0;
+    width: 100%;
+  }
+  .trees .text a {
+    padding: 10px 30px;
+    font-size: 1em;
+    border: 5px #fff solid;
+  }
+}
+
+.form-container {
+  background-color: #9fb59d;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20vw;
+  font-family: 'Amatic SC', cursive;
+}
+
+form {
+  background-color: #516d577c;
+  border-radius: 10px;
+  display: block;
+  margin: 0 5vw auto;
+  padding: 20px;
+}
+
+form p {
+  color: #fff;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+form input {
+  font-size: 1.2em;
+  margin: 10px auto;
+  display: block;
+  padding: 2px;
+}
+
+form button {
+  font-size: 1em;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+  form {
+    margin: 0 20vw auto;
   }
 }
 /*# sourceMappingURL=main.css.map */

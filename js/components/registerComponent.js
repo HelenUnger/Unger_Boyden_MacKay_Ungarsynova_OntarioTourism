@@ -1,7 +1,15 @@
 export default {
     template: `
-    <div>
-        <h2> REGISTERRR </h2>                   
+    <div class="form-container" > 
+        <form action="">
+            <p>Sign up to our newsletters for exclusive deals and events to look forward to.</p>
+            <input type="text" name="first-name" placeholder="first name" id="first-name">
+            <input type="text" name="last-name" placeholder="last name" id="last-name">
+            <input type="email" name="email" placeholder="email" id="email">
+            <input type="text" name="country" placeholder="country" id="country">
+
+            <button type="submit">Send Me News!</button>
+        </form>
     </div>
     `,
 
