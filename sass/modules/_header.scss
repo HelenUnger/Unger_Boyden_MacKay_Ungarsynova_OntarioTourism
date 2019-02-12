@@ -1,0 +1,103 @@
+header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.logo{
+    margin: 5px;
+    max-width: 18vw;
+}
+
+.ham-menu{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2em;
+}
+
+.nav-links{
+    font-family: 'Californian FB', sans-serif;
+    text-transform: lowercase;
+    left: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(138, 70, 70);
+    transition: all 0.5s ease-in-out;
+
+    .exit{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: #000;
+        font-size: 2em;
+    }
+
+   .links{
+        margin-top: 10%;
+        list-style: none;
+        padding: 10px 0;
+        li{
+            display: block;
+            font-size: 2em;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 0.5px solid rgb(128, 128, 128);
+
+        }
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+        margin: 6% 0;
+        list-style: none;
+        li {
+            margin: 5%;
+            display: inline-block;
+            font-size: 2em;
+            text-align: center;
+        }
+    }
+}
+
+a{
+    display: block;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    &:hover{
+        color: purple;
+    }
+}
+
+.openNav{
+    left: 50% !important;
+}
+
+
+@media screen and (min-width:760px){
+    .ham-menu, .exit{
+        font-size: 3em;
+    }
+
+    .logo{
+        max-width: 12vw;
+    }
+    
+}
+
+@media screen and (min-width:1000px){
+    .ham-menu, .exit{
+        font-size: 3em;
+    }
+
+    .logo{
+        max-width: 8vw;
+    }
+    
+}

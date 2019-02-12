@@ -1,13 +1,13 @@
 export default {
     template: `
     <div>
-        <h2> REGISTERRR </h2>                   
+    <h2>HOMEEEE</h2>
     </div>
     `,
 
     data() {
-        return{
-
+        return {
+            
         }
     },
 
@@ -50,5 +50,5 @@ export default {
         //         console.log("username and password can't be blank");
         //     }
         // }
-    },
+    }
 }
