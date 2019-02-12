@@ -61,8 +61,8 @@ export default {
         </section>
 
         <section class="video">
-            <video controls>
-                <source>
+            <video controls preload="auto" playsinline>
+                <source src="video/finalHackathonVid.mp4" type="video/mp4">
             </video>
         </section>
 

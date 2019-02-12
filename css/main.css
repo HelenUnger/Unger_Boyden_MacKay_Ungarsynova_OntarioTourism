@@ -153,6 +153,8 @@ body {
 
 .component-container {
   z-index: 0;
+  overflow: hidden;
+  max-width: 100vw;
 }
 
 @media screen and (min-width: 1000px) {
@@ -344,6 +346,7 @@ footer p {
   }
   footer p {
     top: 70%;
+    color: #fff;
   }
 }
 
