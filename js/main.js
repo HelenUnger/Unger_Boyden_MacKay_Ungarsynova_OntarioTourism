@@ -13,18 +13,22 @@ const router = new VueRouter({
 
 const vm = new Vue({
     data: {
-        message: "sup from vue!",
-        navTrue: false
+        navTrue: false,
+        scroll: false,
     },
 
     created: function() {
-        console.log('parent is live');
+        window.addEventListener('scroll', this.handleScroll);
     },
 
     methods: {
         toggleNav(){
             this.navTrue = (!this.navTrue) ? true : false; 
-        }
+        },
+
+        handleScroll(){
+            this.scroll = (pageYOffset > 50) ? true : false;
+        },
     },
 
     router: router

@@ -1,8 +1,76 @@
 export default {
     template: `
     <div>
-    <h2>HOMEEEE</h2>
-    </div>
+    <section class="splash-img">
+                <img src="images/bg-image.jpg" alt="shoes lookingdown at trees below">
+                <p>Find Yourself at Home</p>
+            </section>
+            <section id="explore">
+                <h2>EXPLORE</h2>
+                <div class="circle-cont">
+                    <div class="explore-circle">
+                        <img src="images/algonquin.png" alt="">
+                        <p>Algonquin</p>
+                    </div>
+
+                    <div class="explore-circle">
+                        <img src="images/ottawa.png" alt="">
+                        <p>Ottawa</p>
+                    </div>
+
+                    <div class="explore-circle">
+                        <img src="images/toronto.png" alt="">
+                        <p>Toronto</p>
+                    </div>
+
+                    <div class="explore-circle">
+                        <img src="images/tobrmory.png" alt="">
+                        <p>Tobermory</p>
+                    </div>
+
+                    <div class="explore-circle">
+                        <img src="images/niagaraFalls.png" alt="">
+                        <p>Niagara Falls</p>
+                    </div>
+
+                    <div class="explore-circle">
+                        <img src="images/grandBend.png" alt="">
+                        <p>Grand Bend</p>
+                    </div>
+
+                </div>
+            </section>
+
+        <section class="scene">
+            <div class="clouds">
+                <img src="images/clouds.png" alt="">
+                <div class="text">
+                    <h2>Discover</h2>
+                    <p>Discover the landscapes and natural attractions that make this province so uniquely Ontario.</p>
+                </div>
+            </div>
+
+            <div class="trees">
+                <img src="images/trees.png" alt="">
+                <div class="text">
+                    <h2>Plan Ahead</h2>
+                    <p>Sign up to our newsletters for exclusive deals and events to look forward to.</p>
+                    <router-link :to="{path: 'register'}" >Get Notified</router-link>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <video controls>
+                <source>
+            </video>
+        </section>
+
+        <footer>
+            <img src="images/footer.png" alt="">
+            <p>&copy; 2019 Ontario Summer Tourism</p>
+        </footer>
+        </div>
     `,
 
     data() {

@@ -7,10 +7,15 @@
 body{
     scroll-behavior: smooth;
     font-family: raleway, sans-serif;
+    background-color: #fff;
 }
 
 .hidden{
     display: none;
+}
+
+.component-container{
+    z-index: 0;
 }
 
 @media screen and (min-width:1000px){
